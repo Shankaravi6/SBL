@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<title>SBL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: static;
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-pale-red w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-12">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide" style="color:purple;font-weight:bold;"><b>SRI BALAJI SILK</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-black" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#" class="w3-bar-item w3-button">Sarees</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-left-align" id="myBtn">
+      Chudithar <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button">Red</a>
+      <a href="#" class="w3-bar-item w3-button">Grey</a>
+      <a href="#" class="w3-bar-item w3-button">Blue</a>
+      <a href="#" class="w3-bar-item w3-button">Pink</a>
+    </div>
+    <a href="#" class="w3-bar-item w3-button">Dhothi</a>
+    <a href="#" class="w3-bar-item w3-button">Grocery</a>
+    <a href="#" class="w3-bar-item w3-button">Jewellary</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-purple w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">SRI BALAJI SILK</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p style="text-align: center;color:black;font-size:35px;font-family: "Lucida Console", "Courier New", monospace;font-weight:bold;">Keep Calm and go Shopping...<i class="fa fa-shopping-cart w3-margin-right"></i></p>
+  </header>
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+<!-- Pictrue Section (Sildshow) -->
+<div class="mySlides w3-display-container w3-center">
+    <img src="ban 1.jpg" style="width:100%">
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="ban 2.jpg" style="width:100%">
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="ban 3.jpg" style="width:100%">
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<br>
+
+
+<br><br><br>
+  <!-- Product grid -->
+  <div class="w3-row">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <a href="Page1.html"><img src="ec11.jpg" style="height:225px;width:222px;"></a>
+        <p>Samudrika Silk<br><b>56,000</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="ec14.jpg" style="height:225px;width:222px;">
+        <p>Wedding Silk<br><b>45,000</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+	<img src="ec12.jpg" style="height:225px;width:222px;">
+        </div>
+        <p>Pink Flower Silk<br><b>19,000</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="ec13.jpg" style="height:225px;width:222px;">
+        <p>Silver Pink Silk<br><b>23,000</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="ec15.jpg" style="height:225px;width:222px;">
+        <p>Yellow Flavour Silk<br><b>34,000</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="ec16.jpg" style="height:225px;width:222px;">
+        </div>
+        <p>Sam Pink Silk<br><b>55,000</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="ec17.jpg" style="height:225px;width:222px;">
+        <p>Green Grass Silk<br><b>28,000</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="ec18.jpg" style="height:225px;width:222px;">
+        <p>Keerthy Majantha Silk<br><b>40,000</b></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-pale-red w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      
+      <div class="w3-col s7">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p>We have better and quality</p>
+        <p>Sarees, Grocery, Dhothi, Jewellary</p>
+        <p>Go to beyond shopping and feel better...</p>  
+      </div>
+
+      <div class="w3-col s5 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i>Sri Balaji Silk</p>
+        <p><i class="fa fa-fw fa-phone"></i>9080197447</p>
+        <p><i class="fa fa-fw fa-envelope"></i>sribalajisilk@gmail.com</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-purple w3-center w3-padding-24">Powered by <a href="bsiq.life" title="BSIQ" target="_blank" class="w3-hover-opacity">BSIQ</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+</body>
+</html>
